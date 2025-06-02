@@ -1,0 +1,20 @@
+site_name: Istruzioni esame MAADB
+site_description: Procedure per sostenere l'esame di Metodi Avanzati di Analisi dei Dati Biomedici - Sapienza Università di Roma
+site_author: Febo Cincotti
+
+theme:
+  name: "material"
+  language: it
+
+
+markdown_extensions:
+  - pymdownx.tasklist
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+    - css/tasklists.css
+
+nav:
+  - Istruzioni: index.md
