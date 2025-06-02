@@ -1,0 +1,11 @@
+[project]
+name = "maadb-exam-instructions"
+version = "2024.06.0dev"
+description = "Docs repository for the MAADB exam instructions"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.14",
+    "pymdown-extensions>=10.15",
+]
