@@ -36,22 +36,25 @@
   - [Parte 2: Quesiti](#parte-2-quesiti)
     - [Quesiti a risposta chiusa](#quesiti-a-risposta-chiusa)
     - [Quesiti a risposta aperta](#quesiti-a-risposta-aperta)
-  - [La cartella condivisa 'esami'](#la-cartella-condivisa-esami)
-  - [Le applicazioni da utilizzare](#le-applicazioni-da-utilizzare)
-    - [Matlab](#matlab)
-    - [Geany (editor di testo)](#geany-editor-di-testo)
-    - [xPDF (visualizzatore di file pdf)](#xpdf-visualizzatore-di-file-pdf)
-  - [Operazioni preliminari sui file d'esame](#operazioni-preliminari-sui-file-desame)
   - [Conclusione dell'esame](#conclusione-dellesame)
+  - [Risorse per lo svolgimento dell'esame](#risorse-per-lo-svolgimento-dellesame)
+    - [La cartella condivisa 'esami'](#la-cartella-condivisa-esami)
+    - [Le applicazioni da utilizzare](#le-applicazioni-da-utilizzare)
+      - [Matlab](#matlab)
+      - [Geany (editor di testo)](#geany-editor-di-testo)
+      - [xPDF (visualizzatore di file pdf)](#xpdf-visualizzatore-di-file-pdf)
+      - [galculator (calcolatrice)](#galculator-calcolatrice)
   - [Appendice - Risoluzione problemi tecnici](#appendice---risoluzione-problemi-tecnici)
+    - [Creazione manuale file di svogimento da template](#creazione-manuale-file-di-svogimento-da-template)
     - [Malfunzionamento dello script avvia-problemi.sh](#malfunzionamento-dello-script-avvia-problemish)
       - [1. Avvio Matlab](#1-avvio-matlab)
       - [2. Impostazione della cartella di lavoro](#2-impostazione-della-cartella-di-lavoro)
       - [3. Configurazione del toolbox di verifica formale](#3-configurazione-del-toolbox-di-verifica-formale)
-    - [Creazione](#creazione)
+    - [Malfunzionamento dello script avvia-rchiusa.sh e/o avvia-raperta.sh](#malfunzionamento-dello-script-avvia-rchiusash-eo-avvia-rapertash)
+    - [Malfunzionamento degli scritpt di consegna](#malfunzionamento-degli-scritpt-di-consegna)
     - [Come aprire manualmente i file pdf](#come-aprire-manualmente-i-file-pdf)
     - [Come aprire manualmente i file txt](#come-aprire-manualmente-i-file-txt)
-    - [Struttura della cartella 'esame'](#struttura-della-cartella-esame)
+  - [Struttura della cartella 'esame'](#struttura-della-cartella-esame)
 
 ## Struttura dell'esame
 
@@ -333,7 +336,31 @@ Al termine del tempo a disposizione (120 minuti dall'inizio della Parte
 2), salvare definitivamente chiudere il file, assicurandosi di aver
 salvato le modifiche.
 
-## La cartella condivisa 'esami'
+## Conclusione dell'esame
+
+L'esame si conclude chiudendo tutti i file, le applicazioni e le
+cartelle utilizzati durante l'esame. Ai fini della valutazione faranno
+fede gli svolgimenti presenti nella cartella 'esame', che saranno
+ritirati allo scadere del tempo messo a disposizione.
+
+Sia durante la Parte 1 che la Parte 2 è possibile lasciare in anticipo
+l'aula d'esame, purché sia già stata effettuata la verifica del
+documento di identità. È comunque richiesto di che l'intenzione di
+lasciare l'aula venga segnalata ad un docente.
+
+Se si intende ritirarsi dall'esame è necessario che nel compito sia
+stata esplicitamente registrata questa scelta e che un docente ne sia
+stato informato.
+
+In caso di **rinuncia** all'esame, sulla [prima riga dei
+file]{.underline} da consegnare (file .m oppure .txt) dovrà apparire
+esclusivamente la parola "**RITIRATO**" (o "RITIRATA").
+
+(segue)
+
+## Risorse per lo svolgimento dell'esame
+
+### La cartella condivisa 'esami'
 
 I file necessari per lo svolgimento della prova si troveranno nella cartella `esame`, di
 cui è presente un link sul desktop.
@@ -383,9 +410,9 @@ Quando il docente annuncia che sta per procedere al ritiro degli svolgimenti, ac
 di aver salvato i file e chiuso i documenti contenenti lo svolgimento (e se non più in
 uso di aver chiuso l'editor -- Matlab o Geany).
 
-## Le applicazioni da utilizzare
+### Le applicazioni da utilizzare
 
-### Matlab
+#### Matlab
 
 *Matlab R2023b* è installato sul PC e viene utilizzato per la Parte 1 dell'esame. 
 
@@ -408,7 +435,7 @@ descritte nella sezione
 [Malfunzionamento dello script avvia-problemi.sh](#malfunzionamento-dello-script-avvia-problemish)  
 in Appendice.
 
-### Geany (editor di testo)
+#### Geany (editor di testo)
 
 *Geany* è l'editor di testo utilizzato per la Parte 2 dell'esame.
 
@@ -442,14 +469,33 @@ copiano nella cartella di lavoro:
   `templates`, modificandone il nome per includere il numero di matricola dello studente
 - apre nell'editor gli script descritti al punto precedente
 
-### xPDF (visualizzatore di file pdf)
+#### xPDF (visualizzatore di file pdf)
 
 *xPDF* è il visualizzatore di file pdf predefinito sui PC d'esame.
 
 !!!todo "Alternativa"
     Valutare se far aprire i file pdf nel browser, ad esempio Firefox, invece che in xPDF.
 
-## Operazioni preliminari sui file d'esame
+#### galculator (calcolatrice)
+
+*galculator* è la calcolatrice predefinita sui PC d'esame. Si trova nel menu delle applicazioni del sistema operativo, sottomenu "Accessori".
+
+![galculator menu and app](img/start-galculator.png)
+
+## Appendice - Risoluzione problemi tecnici
+
+Gli script di avvio e consegna delle prove sono stati verificati sulle
+postazioni di esame e dovrebbero funzionare correttamente. Tuttavia, in caso di
+problemi, è sempre possibile procedere manualmente (come del resto veniva fatto
+dagli studenti degli anni accademici precedenti).
+
+### Creazione manuale file di svogimento da template
+
+Sia per la Parte 1 che per la Parte 2 dell'esame, [prima di aprire le tracce]{.underline} è necessario rinominare tutti i file che nel nome contengono il segnaposto 'MATRICOLA', che va sostituito con il proprio numero di matricola.
+
+È importante accertarsi che il numero di matricola nel nome del file sia corretto e che non siano stati inavvertitamente modificati i caratteri precedenti e seguenti ("_" e ".").
+
+
 
 Sia per la Parte 1 che per la Parte 2 dell'esame, [prima di aprire le
 tracce]{.underline} è necessario **rinominare** tutti i file che nel
@@ -459,34 +505,6 @@ proprio numero di matricola.
 È importante accertarsi che il numero di matricola nel nome del file sia
 corretto e che non siano stati inavvertitamente modificati i caratteri
 precedenti e seguenti (`_` e `.`).
-
-## Conclusione dell'esame
-
-L'esame si conclude chiudendo tutti i file, le applicazioni e le
-cartelle utilizzati durante l'esame. Ai fini della valutazione faranno
-fede gli svolgimenti presenti nella cartella 'esame', che saranno
-ritirati allo scadere del tempo messo a disposizione.
-
-Sia durante la Parte 1 che la Parte 2 è possibile lasciare in anticipo
-l'aula d'esame, purché sia già stata effettuata la verifica del
-documento di identità. È comunque richiesto di che l'intenzione di
-lasciare l'aula venga segnalata ad un docente.
-
-Se si intende ritirarsi dall'esame è necessario che nel compito sia
-stata esplicitamente registrata questa scelta e che un docente ne sia
-stato informato.
-
-In caso di **rinuncia** all'esame, sulla [prima riga dei
-file]{.underline} da consegnare (file .m oppure .txt) dovrà apparire
-esclusivamente la parola "**RITIRATO**" (o "RITIRATA").
-
-(segue)
-
-## Appendice - Risoluzione problemi tecnici
-
-Gli script di avvio e consegna delle prove sono stati verificati sulle postazioni di
-esame e dovrebbero funzionare correttamente. Tuttavia, in caso di problemi, è possibile 
-procedere manualmente (come fatto dagli studenti degli anni accademici precedenti).
 
 ### Malfunzionamento dello script avvia-problemi.sh
 
@@ -541,11 +559,21 @@ Al termine dell'esecuzione, verrà aperto automaticamente il *live script* di ve
 `check_exam.mlx`, che consente di verificare lo stato di avanzamento dello svolgimento e di
 eseguire le verifiche formali sui file e sulle variabili.
 
-### Creazione 
+### Malfunzionamento dello script avvia-rchiusa.sh e/o avvia-raperta.sh
 
-Sia per la Parte 1 che per la Parte 2 dell'esame, [prima di aprire le tracce]{.underline} è necessario rinominare tutti i file che nel nome contengono il segnaposto 'MATRICOLA', che va sostituito con il proprio numero di matricola.
+In caso di malfunzionamento dello script `avvia-rchiusa.sh` e/o `avvia-raperta.sh`, è possibile procedere manualmente come segue:
+1. Aprire il file `MAADB_2024-09_rchiusa_MATRICOLA.txt` e/o `MAADB_2024-09_raperta_MATRICOLA.txt` nell'editor di testo *Geany*.
+2. Rinominare il file sostituendo 'MATRICOLA' con il proprio numero di matricola.
+3. Aprire il file `domande-rchiusa.pdf` e/o `domande-raperta.pdf` con l'applicazione *xPDF*.
+4. Aprire il file `MAADB_2024-09_rchiusa_MATRICOLA.txt` e/o `MAADB_2024-09_raperta_MATRICOLA.txt` nell'editor *Geany*.
+5. Modificare il file di testo in modo da rispondere alle domande, seguendo le istruzioni contenute nel file PDF.
 
-È importante accertarsi che il numero di matricola nel nome del file sia corretto e che non siano stati inavvertitamente modificati i caratteri precedenti e seguenti ("_" e ".").
+### Malfunzionamento degli scritpt di consegna
+
+In caso di malfunzionamento dello script `consegna-problemi.sh`, `consegna-rchiusa.sh` e/o `consegna-raperta.sh`,
+non è necessario eseguire alcuna operazione manuale. Gli svolgimenti dei problemi in Matlab e delle risposte ai quesiti a risposta chiusa e aperta saranno comunque consegnati automaticamente al termine dell'esame, quando il docente procederà al ritiro degli elaborati.
+Non sarà però disponibile allo studente la visualizzazione nel browser degli svolgimenti consegnati.
+E' necessario comunque avvisare i docenti del malfunzionamento, in modo che sappiano di non poter utilizzare alcune delle funzioni connesse alla verifica della consegna degli svolgimenti.
 
 ### Come aprire manualmente i file pdf
 
@@ -578,12 +606,59 @@ file con l'applicazione **xPdf**.
 |
 |
 
-### Struttura della cartella 'esame'
+## Struttura della cartella 'esame'
 
 La cartella 'esame' contiene i file necessari per lo svolgimento della prova. La
 struttura della cartella alla chiusura dell'esame è la seguente:
 
 ```plain
+esame/
+├── istruzioni.pdf
+├── MAADB_cheat_sheet_<versione>.pdf
+├── tavole_z_t_chi2_F.pdf
+├── start-exam.sh                           (*)
+├── student_<lastname>.<matricola>          (1)
+├── MAADB_Part1/
+│   ├── 1-avvia-problemi.sh
+│   ├── 2-consegna-problemi.sh
+│   ├── startup.m                           (*)
+│   ├── matfiles/
+│   │   ├── <problem-data>.mat
+│   │   ├── <problem-data>.mat
+│   │   └── ...
+│   ├── problema1_<matricola>.m             (2)
+│   ├── ...                                 (2)
+│   ├── problema<n>_<matricola>.m           (2)
+│   └── submitted/                          (3)
+│       ├── presubmission_checks_<matricola>_<timestamp>.html
+│       ├── problema1_<matricola>_<timestamp>.html
+│       ├── ...
+│       └── problema<n>_<matricola>_<timestamp>.html
+└── MAADB_Part2/
+    ├── 1-avvia-rchiusa.sh
+    ├── 2-consegna-rchiusa.sh
+    ├── 3-avvia-raperta.sh
+    ├── 4-consegna-raperta.sh
+    ├── domande-rchiusa.pdf
+    ├── domande-raperta.pdf
+    ├── rchiusa_<matricola>.txt             (4)
+    ├── raperta_<matricola>.txt             (6)
+    └── submitted/
+        ├── rchiusa_<matricola>.txt         (5)
+        └── raperta_<matricola>.txt         (7)
+
+(1) Creato dopo l'identificazione dello studente
+(2) Creato dallo script `avvia-problemi.sh` a partire dai template problema*_MATRICOLA.m
+(3) Cartella e contenuto creati dallo script `consegna-problemi.sh` dopo la consegna
+(4) Creato dallo script `avvia-rchiusa.sh` a partire dal template rchiusa_MATRICOLA.txt
+(5) Creato dallo script `consegna-rchiusa.sh` dopo la consegna
+(6) Creato dallo script `avvia-raperta.sh` a partire dal template raperta_MATRICOLA.txt
+(7) Creato dallo script `consegna-raperta.sh` dopo la consegna
+(*) Di norma questi file possono essere ignorato. Vengono utilizzati in caso di 
+    malfunzionamento delle procedure usuali.
+```
+<!-- 
+Struttura della cartella 'esame' con sottocartelle `templates/`
 esame/
 ├── istruzioni.pdf
 ├── MAADB_cheat_sheet_<versione>.pdf
@@ -626,13 +701,4 @@ esame/
         ├── rchiusa_<matricola>.txt         (5)
         └── raperta_<matricola>.txt         (7)
 
-(1) Creato dopo l'identificazione dello studente
-(2) Creato dallo script `avvia-problemi.sh` a partire dal template
-(3) Cartella e contenuto creati dallo script `consegna-problemi.sh` dopo la consegna
-(4) Creato dallo script `avvia-rchiusa.sh` a partire dal template
-(5) Creato dallo script `consegna-rchiusa.sh` dopo la consegna
-(6) Creato dallo script `avvia-raperta.sh` a partire dal template
-(7) Creato dallo script `consegna-raperta.sh` dopo la consegna
-(*) Di norma questi file possono essere ignorato. Vengono utilizzati in caso di 
-    malfunzionamento delle procedure usuali.
-```
+ -->
