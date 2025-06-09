@@ -17,4 +17,8 @@ extra_css:
     - css/tasklists.css
 
 nav:
-  - Istruzioni: index.md
+  - Sinossi: index.md
+  - Esame: exam-phases.md
+  - Software: os-and-software.md
+  - Appendice: troubleshooting.md
+
