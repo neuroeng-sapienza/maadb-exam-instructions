@@ -5,7 +5,8 @@ site_author: Febo Cincotti
 theme:
   name: "material"
   language: it
-
+  features:  # required to enable redirects with front matter
+    - navigation.instant
 
 markdown_extensions:
   - pymdownx.tasklist
@@ -16,9 +17,18 @@ markdown_extensions:
 extra_css:
     - css/tasklists.css
 
+plugins:
+  - search
+  # - redirects
+
+# redirects:
+#   index.md: work_in_progress.md
+
+# nav:
+#   - Sinossi: index.md
+#   - Esame: exam-phases.md
+#   - Software: os-and-software.md
+#   - Appendice: troubleshooting.md
 nav:
-  - Sinossi: index.md
-  - Esame: exam-phases.md
-  - Software: os-and-software.md
-  - Appendice: troubleshooting.md
+  - Home: index.md
 

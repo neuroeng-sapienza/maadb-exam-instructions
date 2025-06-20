@@ -1,5 +1,8 @@
 # Fasi dell'esame
 
+!!!warning "Attenzione"
+    Questa sezione è ancora in fase di revisione. Le informazioni qui contenute potrebbero non essere complete o aggiornate.
+
 ## Operazioni preliminari
 
 ### La convocazione
