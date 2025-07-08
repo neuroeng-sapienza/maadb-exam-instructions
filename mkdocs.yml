@@ -24,11 +24,13 @@ plugins:
 # redirects:
 #   index.md: work_in_progress.md
 
-# nav:
-#   - Sinossi: index.md
-#   - Esame: exam-phases.md
-#   - Software: os-and-software.md
-#   - Appendice: troubleshooting.md
 nav:
-  - Home: index.md
+  - Sinossi: index.md
+  - Esame: exam-phases.md
+  - Software: os-and-software.md
+  - Appendice: troubleshooting.md
 
+# # To show the work in progress page, rename `index_wip.md` to `index.md`, comment out 
+# # the `nav` section above, and uncomment the following lines
+# nav:
+#   - Home: index.md

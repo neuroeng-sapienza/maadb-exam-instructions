@@ -18,8 +18,8 @@ All'inizio dell'esame, la cartella conterrà:
 - Il formulario (`MAADB cheat sheet <versione>.pdf`)
 - le tavole statistiche (`tavole_z_t_chi2_F.pdf`)
 
-Inoltre, la cartella contiene uno script per avviare l'applicazione *Tiburexam*
-(`start-exam.sh`). **Nota bene**: di norma l'applicazione *Tiburexam* è già avviata. Lo
+Inoltre, la cartella contiene uno script per avviare l'applicazione _Exam helper_
+(`start-examhelper.sh`). **Nota bene**: di norma l'applicazione _Exam helper_ è già avviata. Lo
 script serve per riavviarla in caso di chiusura accidentale.
 
 Le tracce verranno distribuite mediante il server dell'aula e appariranno
@@ -59,30 +59,29 @@ uso di aver chiuso l'editor -- Matlab o Geany).
 
 #### Matlab
 
-*Matlab R2023b* è installato sul PC e viene utilizzato per la Parte 1 dell'esame. 
+_Matlab R2023b_ è installato sul PC e viene utilizzato per la Parte 1 dell'esame.
 
-Di norma viene avviato utilizzando lo script `avvia-problemi.sh` presente nella cartella
-`MAADB-Part1`. Lo script, oltre ad avviare l'applicazione, configura l'ambiente per
-l'esame:
+Di norma viene avviato utilizzando il pulsante "_Avvia Problemi in Matlab_" nell'applicazione _Exam helper_. L'applicazione _Exam helper_ procederà a:
 
-- imposta `MAADB_Part1` come cartella di lavoro del Matlab
-- aggiunge al path di Matlab il toolbox di verifica formale, che include il notebook
+- avviare Matlab
+- impostare `MAADB_Part1` come cartella di lavoro del Matlab
+- aggiungere al path di Matlab il toolbox di verifica formale, che include il _live script_
   `check_exam.mlx`
-- copia nella cartella di lavoro gli script contenuti nella sottocartella `templates`,
+- copiare nella cartella di lavoro gli script contenuti nella sottocartella `templates`,
   modificandone il nome per includere il numero di matricola dello studente
-- apre nell'editor gli script descritti al punto precedente
-- avvia il notebook `check_exam.mlx`, che consente di verificare lo stato di avanzamento
+- aprire nell'editor gli script descritti al punto precedente
+- avviare il _live script_ `check_exam.mlx`, che consente di verificare lo stato di avanzamento
   dello svolgimento e di eseguire le verifiche formali sulle variabili.
 
 E' sempre possibile avviare Matlab senza fare uso dello script, ma in questo caso è
 necessario eseguire manualmente le stesse operazioni di configurazione, che sono
 descritte nella sezione  
-[Malfunzionamento dello script avvia-problemi.sh](./troubleshooting.md#malfunzionamento-dello-script-avvia-problemish)  
+[Malfunzionamento della procedura automatica di avvio dei problemi in Matlab](./troubleshooting.md#malfunzionamento-della-procedura-automatica-di-avvio-dei-problemi-in-matlab)  
 in Appendice.
 
 #### Geany (editor di testo)
 
-*Geany* è l'editor di testo utilizzato per la Parte 2 dell'esame.
+_Geany_ è l'editor di testo utilizzato per la Parte 2 dell'esame.
 
 ![Geany: unsaved document](img/geany-unsaved-document.png)
 
@@ -96,7 +95,7 @@ L'applicazione:
 !!!tip  
     Per lo svolgimento della prova, è opportuno modificare la visualizzazione in modo che
     il testo venga visualizzato su più righe, senza che le righe superino il margine destro
-    dello schermo. A questo fine, è necessario attivare il *word wrap* (menu **View -\>
+    dello schermo. A questo fine, è necessario attivare il _word wrap_ (menu **View -\>
     Word Wrap**).
 
     ![Geany: word wrap animation](img/geany-word-wrap.gif)
@@ -106,25 +105,19 @@ L'applicazione:
 
     ![Geany: word wrap animation](img/geany-close-panes.gif)
 
-Si norma viene avviato utilizzando gli script `avvia-raperta.sh` `avvia-rchiusa.sh`
-presenti nella cartella `MAADB-Part2`. Questi script, oltre ad avviare l'applicazione:
-copiano nella cartella di lavoro:
+Di norma viene avviato utilizzando il pulsante "_Avvia Quesiti a Risposta Chiusa_" o "_Avvia Quesiti a Risposta Aperta_" nell'applicazione _Exam helper_. L'applicazione _Exam helper_ procederà a:
 
-- copia nella cartella di lavoro i documenti di testo contenuti nella sottocartella
+- copiare nella cartella di lavoro i documenti di testo contenuti nella sottocartella
   `templates`, modificandone il nome per includere il numero di matricola dello studente
-- apre nell'editor gli script descritti al punto precedente
+- aprire nell'editor gli script descritti al punto precedente
 
-#### xPDF (visualizzatore di file pdf)
+#### xPDF (visualizzatore di file pdf) -- OBSOLETO
 
-!!!todo "Sezione in revisione"
+!!!warning "Sezione in revisione"
     I file pdf saranno aperti nel browser web.
-
-*xPDF* è il visualizzatore di file pdf predefinito sui PC d'esame ...
-
 
 #### galculator (calcolatrice)
 
-*galculator* è la calcolatrice predefinita sui PC d'esame. Si trova nel menu delle applicazioni del sistema operativo, sottomenu "Accessori".
+_galculator_ è la calcolatrice predefinita sui PC d'esame. Si trova nel menu delle applicazioni del sistema operativo, sottomenu "Accessori".
 
 ![galculator menu and app](img/start-galculator.png)
-
